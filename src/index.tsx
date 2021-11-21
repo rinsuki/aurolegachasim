@@ -71,7 +71,7 @@ function assignRoles(
     const mayRoles: Role[] = [];
     for (const mrai of mayRAIs) {
         for (let c = 0; c < mrai.count; c++) {
-            if (Math.floor(Math.random() * 101) < mrai.percent)
+            if (randomInt(101) < mrai.percent)
                 mayRoles.push(mrai.role);
         }
     }
